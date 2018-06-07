@@ -145,15 +145,15 @@ app.post('/login', (req, res)=>{
     }
 
 
-    app.post('/sms/1', (req, res)=>{
+    app.post('/sms', (req, res)=>{
         const twiml = new MessagingResponse();
         let body = req.body;
         console.log(req.body);
-        // if (req.body === 1) {
+         if (req.body === 1) {
             twiml.message('Great! We will let them know you are interested in meeting up!');
-        // } else {
-        //     twiml.message('No? No Problem, We hope you have a great night!');
-        // }
+        } else {
+            twiml.message('No? No Problem, We hope you have a great night!');
+        }
         res.writeHead(200, {'Content-Type': 'text/xml'});
         res.end(twiml.toString());
     });
