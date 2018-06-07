@@ -4,11 +4,14 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken')
+const jwt = require('jsonwebtoken');
 const twilio = require('twilio');
+
 //import config from './config';
-const accountSid = '';
-const authToken = '';
+require('dotenv').config(); // this line reads all the key-value pairs from your .env into process.env
+
+const accountSid = process.env.TWILIO_ACCOUNT_ID;
+const authToken = process.env.TWITIO_AUTHTOKEN;
 const client = new twilio(accountSid, authToken);
 const MessagingResponse = require('twilio').twiml.MessagingResponse;
 const authRouter = require('./routes/auth');
@@ -30,6 +33,8 @@ app.use((req, res, next) => {
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
   });
+
+app.use(express.static('./frontend/ericas_app/build'));
 
 const PORT = process.env.PORT || 8080;
 
