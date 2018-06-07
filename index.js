@@ -119,7 +119,7 @@ app.post('/login', (req, res)=>{
         //...I'm too tried for this
         let hotBod = 'Hey, it\'s BlindPl@te, up for dinner tonight? Well ' + name + ' wants to hit up ' + rest + ' tonight at '+ time + '. They would like to talk about '+ conv +' and left a message saying "'+ msg + '". Tonight they are feeling like a '+ opt +' if you\'re interested, here\'s their # '+number;
         // ...propbably shouldn't listen to MJ while Coding
-        let smoothCriminal = ' @ Replay 1 too Accept OR 2 too Decline';
+        let smoothCriminal = ' @ Replay Yes too Accept OR just continue with you\'re night too Decline';
         //console.log(hotBod);
         for (let i = 0; i < results.length; i++) {
            // console.log(results[i].phone_number);
@@ -144,19 +144,15 @@ app.post('/login', (req, res)=>{
         }
     }
 
-
+// handeling 
     app.post('/sms', (req, res)=>{
         const twiml = new MessagingResponse();
-        let body = req.body;
-        console.log(req.body);
-         if (req.body === 1) {
-            twiml.message('Great! We will let them know you are interested in meeting up!');
-        } else {
-            twiml.message('No? No Problem, We hope you have a great night!');
-        }
+        twiml.message('Great! We will let them know you are interested in meeting up!');
         res.writeHead(200, {'Content-Type': 'text/xml'});
         res.end(twiml.toString());
     });
+
+
 
     app.listen(PORT, ()=>{
         console.log('linked on', PORT);
