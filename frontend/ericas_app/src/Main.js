@@ -111,7 +111,8 @@ class Main extends Component {
                     <div className="form-group col-6">
                         <label htmlFor="conversation">Got a topic of conversation in mind?</label>
                         <select className="form-control shadow-light" id="conversation" ref = "conv">
-                        <option value = "Anything" >...</option>                        
+                        <option value = "Anything" >...</option> 
+                        <option value = "Coding" >Coding</option>                                               
                         <option value = "Art" >Art</option>
                         <option value = "Music" >Music</option>
                         <option value = "Science" >Science</option>
@@ -139,7 +140,7 @@ class Main extends Component {
                    <h4> The Request you sent out:</h4>
                     <div>
                         {this.state.newRec.rest}
-                        Time: {this.state.newRec.time}
+                        <p>Time: {this.state.newRec.time}</p>
                         <p>Message: {this.state.newRec.msg}</p>
                         <p>The topic of conversation: {this.state.newRec.conv}</p><p>and you set yourself as a: {this.state.newRec.opt}</p>
                     </div>

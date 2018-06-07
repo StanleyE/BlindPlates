@@ -3,6 +3,7 @@ import './App.css';
 import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
 import Main from './Main';
 import Login from './Login';
+import About from './About'
 const axios = require('axios');
 
 
@@ -52,7 +53,6 @@ reqSent=()=>{
       msg: form.msg,
       conv: form.conv,
       opt: form.opt
-
     }
     // console.log(newLoc,'newlocation');
     // console.log(form);
@@ -75,13 +75,17 @@ reqSent=()=>{
   
 
   render() {
+    
+console.log(process.env.REACT_APP_API_KEY)
+
     return (
       <div className="App">
         <div className = 'header container'>
           <h1>BlindPl@te</h1>
         </div>
         <nav>
-          <Link className = 'nav nav-login' to='/'> Login </Link>
+          <Link className = 'nav nav-about' to='/'> About </Link>          
+          <Link className = 'nav nav-login' to='/login'> Login </Link>
           <Link className = 'nav nav-main' to='/main'> Main User Page </Link>
         </nav>
         <div className="greet">
@@ -89,7 +93,8 @@ reqSent=()=>{
           <h4>Feeling like socializing tonight?</h4>
         </div>
         <Switch>
-          <Route exact path='/' render = {()=>{return <Login />}} />          
+          <Route exact path='/' render = {()=>{return <About />}} />                    
+          <Route  path='/login' render = {()=>{return <Login />}} />          
           <Route path='/main' render = {()=>{return <Main results = {this.state.results} findPeople = {this.findPeople} reqSent = {this.state.reqSent} newRec = {this.newRec} />}} />
         </Switch>
       </div>

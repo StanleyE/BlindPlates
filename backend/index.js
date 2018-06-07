@@ -6,9 +6,12 @@ const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken')
 const twilio = require('twilio');
-//const MessagingResponse = require('twilio').TwimlResponse.MessagingResponse;
+import config from './config';
+const accountSid = config.accountSid;
+const authToken = config.authToken;
 const client = new twilio(accountSid, authToken);
-const authRouter = require('./routes/auth')
+const MessagingResponse = require('twilio').twiml.MessagingResponse;
+const authRouter = require('./routes/auth');
 
 
 const db= mongoose.connection;
@@ -110,14 +113,14 @@ app.post('/login', (req, res)=>{
         //...I'm too tried for this
         let hotBod = 'Hey, it\'s BlindPl@te, up for dinner tonight? Well ' + name + ' wants to hit up ' + rest + ' tonight at '+ time + '. They would like to talk about '+ conv +' and left a message saying "'+ msg + '". Tonight they are feeling like a '+ opt +' if you\'re interested, here\'s their # '+number;
         // ...propbably shouldn't listen to MJ while Coding
-        let smoothCriminal = ' @ Replay 1 too Accept, 2 too Decline, 3 for More Information';
+        let smoothCriminal = ' @ Replay 1 too Accept OR 2 too Decline';
         //console.log(hotBod);
         for (let i = 0; i < results.length; i++) {
            // console.log(results[i].phone_number);
             if (results[i].phone_number != undefined) {
                 let phone_number = results[i].phone_number;
                     client.messages.create({
-                    body: hotBod,
+                    body: hotBod+smoothCriminal,
                     to: '+'+phone_number,
                     from: '+12892746840'
                     })
@@ -136,13 +139,18 @@ app.post('/login', (req, res)=>{
     }
 
 
-    // app.post('/sms', (req, res)=>{
-    //     let body = req.body;
-    //     console.log(req.body);
-    //     // if (req.body === 1) {
-            
-    //     // }
-    // })
+    app.post('/sms/1', (req, res)=>{
+        const twiml = new MessagingResponse();
+        let body = req.body;
+        console.log(req.body);
+        // if (req.body === 1) {
+            twiml.message('Great! We will let them know you are interested in meeting up!');
+        // } else {
+        //     twiml.message('No? No Problem, We hope you have a great night!');
+        // }
+        res.writeHead(200, {'Content-Type': 'text/xml'});
+        res.end(twiml.toString());
+    });
 
     app.listen(PORT, ()=>{
         console.log('linked on', PORT);
