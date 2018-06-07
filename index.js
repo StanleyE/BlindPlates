@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/CapStone');
+const DB_URL = process.env.NODE_ENV === 'production' ? process.env.DB_URL : 'mongodb://localhost/CapStone'
+mongoose.connect(DB_URL);
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
