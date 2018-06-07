@@ -6,9 +6,9 @@ const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken')
 const twilio = require('twilio');
-import config from './config';
-const accountSid = config.accountSid;
-const authToken = config.authToken;
+//import config from './config';
+const accountSid = '';
+const authToken = '';
 const client = new twilio(accountSid, authToken);
 const MessagingResponse = require('twilio').twiml.MessagingResponse;
 const authRouter = require('./routes/auth');
