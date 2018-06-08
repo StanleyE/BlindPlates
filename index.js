@@ -66,19 +66,6 @@ app.use('/auth', authRouter)
 //        });
 
 
-//Login 
-app.post('/login', (req, res)=>{
-    //let {email, password} = req.body;
-    let password = brainstation2018;    
-    bcrypt.genSalt(12, (err, salt)=>{
-        if(err){
-            return console.log(err);
-        } else {
-            bcrypt.hash(password, salt)
-        }
-    })
-})
-
 //function that will 
     //1. take in a location of a resuarant
     //2. create a radius around location (approx 20km?)
