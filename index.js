@@ -115,11 +115,14 @@ app.post('/login', (req, res)=>{
              })
     })
 
+
+
     twilioSMS=(results, name, rest, time, number, msg, conv, opt)=>{
         //...I'm too tried for this
-        let hotBod = 'Hey, it\'s BlindPl@te, up for dinner tonight? Well ' + name + ' wants to hit up ' + rest + ' tonight at '+ time + '. They would like to talk about '+ conv +' and left a message saying "'+ msg + '". Tonight they are feeling like a '+ opt +' if you\'re interested, here\'s their # '+number;
+        let hotBod = 'Hey, it\'s BlindPl@te, up for dinner tonight? Well ' + name + ' wants to hit up ' + rest + ' tonight at '+ time + '. They would like to talk about '+ conv +' and left a message saying "'+ msg + '". Tonight they are feeling like a '+ opt;
+        // original ending to the message {if you\'re interested, here\'s their # '+number}
         // ...propbably shouldn't listen to MJ while Coding
-        let smoothCriminal = ' @ Replay Yes too Accept OR just continue with you\'re night too Decline';
+        let smoothCriminal = ' @ Interested? Replay Yes too Accept';
         //console.log(hotBod);
         for (let i = 0; i < results.length; i++) {
            // console.log(results[i].phone_number);
@@ -152,6 +155,10 @@ app.post('/login', (req, res)=>{
         res.end(twiml.toString());
     });
 
+    twilioResponce=()=>{
+        //connect to front end and change state to allow user to knwo somebody has replied yes to their request
+
+    }
 
 
     app.listen(PORT, ()=>{

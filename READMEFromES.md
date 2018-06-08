@@ -12,10 +12,10 @@ user walk through of app
 - Search/select restaurant
 - Input time frame
 - Send request with small message
-- Request starts search for all other users within X km (X is still to be decided)      radius of restaurant location
-- Geographically qualified recipients receive a notification with time and place        information as well as basic info of requester
+- Request starts search for all other users within X km (X is still to be decided) radius of restaurant location
+- Geographically qualified recipients receive a notification with time and place information as well as basic info of requester
 - Recipient chooses whether to accept or decline
-- For the recipients that accept, their basic info is sent over with a simple           message
+- For the recipients that accept, their basic info is sent over with a simple message
 - The requester receives a list of people who are interested
 - Requester reviews and selects 1 or more people to meet up with 
     **{and contacts them via the phone number provided}
@@ -30,8 +30,8 @@ Another Stretch goal would be making the log in interactive.
 
 ## Diving Deeper:
 ### Bonus Features:
-- Person can select whether they are/feel like a talker or a listener that night        and be matched (or sort the list) accordingly
-- When both phone numbers are released, a pre-made message is sent to other user        (simple at first['hey it's ${frist_name}'], but extreme would be a unique           message set by the user)
+- Person can select whether they are/feel like a talker or a listener that night and be matched (or sort the list) accordingly
+- When both phone numbers are released, a pre-made message is sent to other user (simple at first['hey it's ${frist_name}'], but extreme would be a unique message set by the user)
 - Can select parks and routes for sports events and parades/marches
 ### Insane bonus feature: 
 - In app chat before phone# is released
@@ -39,8 +39,8 @@ Another Stretch goal would be making the log in interactive.
 - Rate the person after the meet up (able to block future notification)
 ### Years from now Bonus Features:
 - Make Mobile
-- Once both parties confirm, a reservation is sent to the restaurant (AI/ google        assistant? or internal booking system with restaurant) and both users are           informed once completed or if the time needs to be adjusted
-- Connect with Restaurants, to connect and promote them and any special deals they      wish to offer through the app (1/2 off apps ect.)
+- Once both parties confirm, a reservation is sent to the restaurant (AI/ google assistant? or internal booking system with restaurant) and both users are informed once completed or if the time needs to be adjusted
+- Connect with Restaurants, to connect and promote them and any special deals they wish to offer through the app (1/2 off apps ect.)
 
 ## Data:
 User [

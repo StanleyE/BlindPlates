@@ -136,6 +136,7 @@ class Main extends Component {
                     </div> 
                     </div>    
                 </form>
+                {/* Once form has been submitted it will dissapear and this run down of the request will show */}
                 <div className={this.props.reqSent[0].sent ? null : "hidden"}>
                    <h4> The Request you sent out:</h4>
                     <div>
