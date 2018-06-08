@@ -39,7 +39,7 @@ class Register extends Component {
 
 export default Register;
 
-<div class="form-group">
+{/* <div class="form-group">
     <label for="inputAddress">Address</label>
     <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
   </div>
@@ -70,4 +70,4 @@ export default Register;
       <label class="form-check-label" for="gridCheck">
         Check me out
       </label>
-    </div>
+    </div> */}
