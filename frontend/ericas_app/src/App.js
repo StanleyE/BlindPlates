@@ -75,8 +75,6 @@ reqSent=()=>{
   
 
   render() {
-    
-
     return (
       <div className="App">
         <div className = 'header container'>

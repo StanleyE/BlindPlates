@@ -23,7 +23,7 @@ class Main extends Component {
                  lat: position.coords.latitude,
                  lng: position.coords.longitude
                     };
-                    console.log(geoloc, 'geoloc??')
+                    // console.log(geoloc, 'geoloc??')
             var circle = new google.maps.Circle({
                 center: geoloc,
                 radius: 10000

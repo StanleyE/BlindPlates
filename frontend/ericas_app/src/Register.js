@@ -4,6 +4,7 @@ class Register extends Component {
     render() {
         return (
             <div>
+                Hello?!
                   <form className= 'login container'>
                   <div className="form-group">
                         <label htmlFor="FirstName">Name</label>
