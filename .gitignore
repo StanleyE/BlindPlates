@@ -5,6 +5,7 @@
 /data
 /config.js
 /.env
+/nopush
 
 # testing
 /coverage
