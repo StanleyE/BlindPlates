@@ -1,104 +1,91 @@
-body{
+body {
   background-color: white;
   font-family: 'Merriweather', serif;
-}
+  background-color: #d6c5bb; }
 
 .App {
-    text-align: center;
-    margin-bottom: 1em;    
-    height:100vh;
-    width:100vw;
-}
+  text-align: center;
+  margin-bottom: 1em;
+  height: 100vh;
+  width: 100vw; }
 
-.header{
-  margin: 1em auto;
-  background-image: url('./jenny-unsplash.jpg');
+.header {
+  background-image: url("./images/matt-unsplash.jpg");
   background-size: cover;
-  background-position: bottom center;
+  background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  padding: 2em; 
-  height: 15em;
-  /* border-radius: 8%; */
-}
+  padding: 2em;
+  height: 45em; }
 
-h1{
-  font-size: 4rem;
-  color:white;
+h1 {
+  font-size: 5rem;
+  color: white;
   font-weight: 900;
   margin-top: 0.5em;
-  text-shadow: 1px 3px 4px black;
-}
+  text-shadow: 1px 3px 4px black; }
 
-.greet{
+.greet {
   margin: .75em;
-}
+  color: black; }
 
-.login{
+.login {
   text-align: center;
-  background-color: ghostwhite;
+  background-color: #373a43;
+  color: white;
   height: 20em;
   width: 30em;
   padding: 3rem;
   margin-top: 1rem;
   border-radius: 5%;
-  box-shadow: 2px 5px 8px darkgrey;
-}
+  box-shadow: 2px 5px 8px darkgrey; }
 
 .btn {
-  box-shadow: 1px 2px 3px grey; 
-  text-align:center;
-  width:100%;
-  background-color: tan;
-  border: .5px solid slategray;
-}
+  box-shadow: 1px 2px 3px grey;
+  text-align: center;
+  width: 100%;
+  background-color: #5bb7c1;
+  border: .5px solid slategray; }
 
 .btn:hover {
-  background-color: #74C248;
-  border: .5px solid slategray;  
-}
+  background-color: white;
+  color: black;
+  border: .5px solid slategray; }
 
 .btn-submit {
-  width:20%;
-}
+  width: 20%; }
 
-.shadow-light{
-  box-shadow: 1px 2px 3px grey;    
-}
+.shadow-light {
+  box-shadow: 1px 2px 3px grey; }
 
-.nav{
+.nav {
   display: inline-block;
   text-align: center;
   margin: .25rem;
   padding: 0.50rem;
-  background-color: ghostwhite;
+  background-color: #373a43;
   border-radius: 5%;
-  box-shadow: 1px 2px 3px rgb(68, 65, 65);
-  color: black;
-  position: relative;
-}
+  box-shadow: 1px 2px 3px #444141;
+  color: white;
+  position: relative; }
 
-.nav-about{
-  top:-36px;
-  left: -22px;
-}
+.nav-about {
+  top: -24px;
+  left: -22px; }
 
-.nav-login{
-  top:-36px;
-  left: 20px;
-}
+.nav-login {
+  top: -24px;
+  left: 20px; }
 
-.nav-main{
-  top: -36px;
-  right: -53px;
-}
+.nav-main {
+  top: -24px;
+  right: -53px; }
 
-.nav:hover{
+.nav:hover {
   text-decoration: none;
-  color:black;
+  color: black;
   background-color: white;
-  box-shadow: 3px 4px 5px darkgray;  
-}
+  box-shadow: 3px 4px 5px darkgray; }
 
 .candidates {
   background-color: ghostwhite;
@@ -107,70 +94,55 @@ h1{
   height: auto;
   padding: 0.75em;
   margin: 0.50em 0.50em;
-  box-shadow: 1px 2px 3px rgb(68, 65, 65);
+  box-shadow: 1px 2px 3px #444141;
   border: 1px solid #74C248;
   position: relative;
-  display:flex;
+  display: flex;
   flex-direction: column;
-  justify-content: space-between;
-}
+  justify-content: space-between; }
 
-.user-content{
+.user-content {
   display: block;
-  text-align: center;
-}
+  text-align: center; }
 
 .connect {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: center;
-}
+  align-items: center; }
 
 .hidden {
-  display: none;
-}
+  display: none; }
 
 .hold {
   margin: .75em auto;
-  justify-content: center;
-}
+  justify-content: center; }
 
-.motherdiv{
-  width:100%;
-  background: linear-gradient(white, ghostwhite, tan,  #74C248);
-  padding: 2em;
-}
+.motherdiv {
+  width: 100%;
+  /* background: linear-gradient(white, ghostwhite, tan,  #74C248); */
+  background: linear-gradient(#d6c5bb, #5bb7c1, #373a43);
+  padding: 2em; }
 
-.search{
-  background-color: ghostwhite;
+.search {
+  background-color: #373a43;
+  color: white;
   border-radius: 5%;
-  box-shadow: 2px 5px 8px rgb(68, 65, 65);
+  box-shadow: 2px 5px 8px #444141;
   height: auto;
   width: 50%;
   padding: 1em;
-  margin: 1em auto;  
-}
+  margin: 1em auto; }
 
-.about{
-  margin: 1em auto;
-  background: linear-gradient(white, ghostwhite, tan,  #74C248);  
-  /* background-image: url('./jenny-unsplash.jpg'); */
-  background-size: cover;
-  background-position: bottom;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  padding: 2em; 
-  height: auto;
-  /* border-radius: 10%; */
-}
+.about {
+  background: linear-gradient(#d6c5bb, #5bb7c1, #373a43);
+  padding: 2em;
+  height: auto; }
 
 .about-cont {
-  color: black;
+  color: white;
   font-weight: 800;
-  font-size: 1.25rem;
-}
+  font-size: 1.25rem; }
 
 .phone {
-  color:#74C248;
-}
+  color: #74C248; }

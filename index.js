@@ -102,8 +102,6 @@ app.use('/auth', authRouter)
              })
     })
 
-
-
     twilioSMS=(results, name, rest, time, number, msg, conv, opt)=>{
         //...I'm too tried for this
         let hotBod = 'Hey, it\'s BlindPl@te, up for dinner tonight? Well ' + name + ' wants to hit up ' + rest + ' tonight at '+ time + '. They would like to talk about '+ conv +' and left a message saying "'+ msg + '". Tonight they are feeling like a '+ opt;
@@ -143,11 +141,11 @@ app.use('/auth', authRouter)
     });
 
     twilioResponce=()=>{
-        //connect to front end and change state to allow user to knwo somebody has replied yes to their request
+        //connect to front end and change state to allow user to know somebody has replied yes to their request
 
     }
 
-
+//express listener
     app.listen(PORT, ()=>{
         console.log('linked on', PORT);
     })

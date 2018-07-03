@@ -1,0 +1,179 @@
+$color1:#5bb7c1;
+$color2:#d6c5bb;
+$color3:#373a43;
+
+body{
+    background-color: white;
+    font-family: 'Merriweather', serif;
+    background-color: #d6c5bb;
+  }
+  
+  .App {
+      text-align: center;
+      margin-bottom: 1em;    
+      height:100vh;
+      width:100vw;
+  }
+  
+  .header{
+    background-image: url('./images/matt-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 2em; 
+    height: 45em;
+  }
+  
+  h1{
+    font-size: 5rem;
+    color:white;
+    font-weight: 900;
+    margin-top: 0.5em;
+    text-shadow: 1px 3px 4px black;
+  }
+  
+  .greet{
+    margin: .75em;
+    color:black;
+  }
+  
+  .login{
+    text-align: center;
+    background-color: $color3;
+    color:white;
+    height: 20em;
+    width: 30em;
+    padding: 3rem;
+    margin-top: 1rem;
+    border-radius: 5%;
+    box-shadow: 2px 5px 8px darkgrey;
+  }
+  
+  .btn {
+    box-shadow: 1px 2px 3px grey; 
+    text-align:center;
+    width:100%;
+    background-color:$color1;
+    border: .5px solid slategray;
+  }
+  
+  .btn:hover {
+    background-color: white;
+    color:black;
+    border: .5px solid slategray;  
+  }
+  
+  .btn-submit {
+    width:20%;
+  }
+  
+  .shadow-light{
+    box-shadow: 1px 2px 3px grey;    
+  }
+  
+  .nav{
+    display: inline-block;
+    text-align: center;
+    margin: .25rem;
+    padding: 0.50rem;
+    background-color: $color3;
+    border-radius: 5%;
+    box-shadow: 1px 2px 3px rgb(68, 65, 65);
+    color: white;
+    position: relative;
+  }
+  
+  .nav-about{
+    top:-24px;
+    left: -22px;
+  }
+  
+  .nav-login{
+    top:-24px;
+    left: 20px;
+  }
+  
+  .nav-main{
+    top: -24px;
+    right: -53px;
+  }
+  
+  .nav:hover{
+    text-decoration: none;
+    color:black;
+    background-color: white;
+    box-shadow: 3px 4px 5px darkgray;  
+  }
+  
+  .candidates {
+    background-color: ghostwhite;
+    border-radius: 5%;
+    width: 20em;
+    height: auto;
+    padding: 0.75em;
+    margin: 0.50em 0.50em;
+    box-shadow: 1px 2px 3px rgb(68, 65, 65);
+    border: 1px solid #74C248;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .user-content{
+    display: block;
+    text-align: center;
+  }
+  
+  .connect {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .hold {
+    margin: .75em auto;
+    justify-content: center;
+  }
+  
+  .motherdiv{
+    width:100%;
+    /* background: linear-gradient(white, ghostwhite, tan,  #74C248); */
+    background: linear-gradient(#d6c5bb,#5bb7c1,#373a43);
+    // background-color: $color2;
+    padding: 2em;
+  }
+  
+  .search{
+    background-color: $color3;
+    color: white;
+    border-radius: 5%;
+    box-shadow: 2px 5px 8px rgb(68, 65, 65);
+    height: auto;
+    width: 50%;
+    padding: 1em;
+    margin: 1em auto;  
+  }
+
+  .about{
+    // background-color: $color1;
+    background: linear-gradient(#d6c5bb,#5bb7c1,#373a43);
+    padding: 2em; 
+    height: auto;
+  }
+  
+  .about-cont {
+    color: white;
+    font-weight: 800;
+    font-size: 1.25rem;
+  }
+  
+  .phone {
+    color:#74C248;
+  }

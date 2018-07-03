@@ -73,11 +73,10 @@ reqSent=()=>{
     this.reqSent();
   }
   
-
   render() {
     return (
       <div className="App">
-        <div className = 'header container'>
+        <div className = 'header'>
           <h1>BlindPl@te</h1>
         </div>
         <nav>
