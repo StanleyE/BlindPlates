@@ -1,7 +1,7 @@
 body {
   background-color: white;
   font-family: 'Merriweather', serif;
-  background-color: #d6c5bb; }
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%); }
 
 .App {
   text-align: center;
@@ -120,8 +120,7 @@ h1 {
 
 .motherdiv {
   width: 100%;
-  /* background: linear-gradient(white, ghostwhite, tan,  #74C248); */
-  background: linear-gradient(#d6c5bb, #5bb7c1, #373a43);
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
   padding: 2em; }
 
 .search {
@@ -135,12 +134,12 @@ h1 {
   margin: 1em auto; }
 
 .about {
-  background: linear-gradient(#d6c5bb, #5bb7c1, #373a43);
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
   padding: 2em;
   height: auto; }
 
 .about-cont {
-  color: white;
+  color: black;
   font-weight: 800;
   font-size: 1.25rem; }
 

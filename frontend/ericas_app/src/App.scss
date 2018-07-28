@@ -1,11 +1,10 @@
 $color1:#5bb7c1;
 $color2:#d6c5bb;
 $color3:#373a43;
-
 body{
     background-color: white;
     font-family: 'Merriweather', serif;
-    background-color: #d6c5bb;
+    background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
   }
   
   .App {
@@ -144,9 +143,7 @@ body{
   
   .motherdiv{
     width:100%;
-    /* background: linear-gradient(white, ghostwhite, tan,  #74C248); */
-    background: linear-gradient(#d6c5bb,#5bb7c1,#373a43);
-    // background-color: $color2;
+    background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
     padding: 2em;
   }
   
@@ -162,14 +159,14 @@ body{
   }
 
   .about{
-    // background-color: $color1;
-    background: linear-gradient(#d6c5bb,#5bb7c1,#373a43);
+    background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+    // background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
     padding: 2em; 
     height: auto;
   }
   
   .about-cont {
-    color: white;
+    color: black;
     font-weight: 800;
     font-size: 1.25rem;
   }
