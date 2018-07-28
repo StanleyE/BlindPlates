@@ -76,36 +76,22 @@ reqSent=()=>{
   render() {
     return (
       <div className="App">
-        <nav class = 'navbar navbar-expand-lg navbar-dark bg-dark' >
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+      <nav className = 'navbar navbar-expand-lg navbar-dark bg-dark'>
+        <button className ="navbar-toggler" type="button" data-toggle="collapse"    data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span className ="navbar-toggler-icon"></span>
           </button>
+          <h2 className ='nav-logo'>BlindPl@tes</h2>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-              </li>
-            </ul>
+            <Link className = 'nav nav-about' to='/'> About </Link>
+            <Link className = 'nav nav-login' to='/login'> Login </Link>
+            <Link className = 'nav nav-main' to='/main'> Main User Page </Link>
           </div>
         </nav>
         <div className = 'header'>
           <h1>BlindPl@te</h1>
+          <h3>Let's have dinner together</h3>
         </div>
-        <nav>
-          <Link className = 'nav nav-about' to='/'> About </Link>
-          <Link className = 'nav nav-login' to='/login'> Login </Link>
-          <Link className = 'nav nav-main' to='/main'> Main User Page </Link>
-        </nav>
+        
         <div className="greet">
           <h3>Hey there!</h3>
           <h4>Feeling like socializing tonight?</h4>

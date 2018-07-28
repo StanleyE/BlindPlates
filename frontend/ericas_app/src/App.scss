@@ -21,7 +21,10 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     padding: 2em; 
-    height: 45em;
+    height: 40em;
+    h3{
+      color:white;
+    }
   }
   
   h1{
@@ -76,33 +79,37 @@ body{
     text-align: center;
     margin: .25rem;
     padding: 0.50rem;
-    background-color: $color3;
-    border-radius: 5%;
-    box-shadow: 1px 2px 3px rgb(68, 65, 65);
     color: white;
     position: relative;
   }
-  
+
+  .nav-logo{
+    color:white;
+    margin-right: 1em;
+  }
+
   .nav-about{
-    top:-24px;
-    left: -22px;
+    // top:-24px;
+    // left: -22px;
+    margin-right: 2em;
   }
   
   .nav-login{
-    top:-24px;
-    left: 20px;
+    // top:-24px;
+    // left: 20px;
+    margin-right: 2em;
   }
   
   .nav-main{
-    top: -24px;
-    right: -53px;
+    // top: -24px;
+    // right: -53px;
+    margin-right: 2em;
   }
   
   .nav:hover{
     text-decoration: none;
     color:black;
-    background-color: white;
-    box-shadow: 3px 4px 5px darkgray;  
+    background-color: white;  
   }
   
   .candidates {
