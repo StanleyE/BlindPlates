@@ -9,7 +9,8 @@ const jwt = require('jsonwebtoken');
 const twilio = require('twilio');
 
 //import config from './config';
-require('dotenv').config(); // this line reads all the key-value pairs from your .env into process.env
+require('dotenv').config(); // this line reads all the key-value pairs from your .env into process.env 
+//(if issue may need to adjust path to nopush folder, or move file out)
 
 const accountSid = process.env.TWILIO_ACCOUNT_ID;
 const authToken = process.env.TWITIO_AUTHTOKEN;
