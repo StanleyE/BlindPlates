@@ -24,6 +24,8 @@ body{
     height: 40em;
     h3{
       color:white;
+      font-weight: 800;
+      text-shadow: 1px 3px 4px $color3;
     }
   }
   
@@ -180,4 +182,20 @@ body{
   
   .phone {
     color:#74C248;
+  }
+
+  .reg{
+    text-align: center;
+    background-color: $color3;
+    color:white;
+    height: auto;
+    width: 50em;
+    padding: 3rem;
+    margin-top: 1rem;
+    border-radius: 5%;
+    box-shadow: 2px 5px 8px darkgrey;
+  }
+
+  .flex-dis{
+    display: flex;
   }

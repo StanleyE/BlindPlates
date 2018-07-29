@@ -18,7 +18,9 @@ body {
   padding: 2em;
   height: 40em; }
   .header h3 {
-    color: white; }
+    color: white;
+    font-weight: 800;
+    text-shadow: 1px 3px 4px #373a43; }
 
 h1 {
   font-size: 5rem;
@@ -144,3 +146,17 @@ h1 {
 
 .phone {
   color: #74C248; }
+
+.reg {
+  text-align: center;
+  background-color: #373a43;
+  color: white;
+  height: auto;
+  width: 50em;
+  padding: 3rem;
+  margin-top: 1rem;
+  border-radius: 5%;
+  box-shadow: 2px 5px 8px darkgrey; }
+
+.flex-dis {
+  display: flex; }

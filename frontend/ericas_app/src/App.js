@@ -3,7 +3,8 @@ import './App.css';
 import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
 import Main from './Main';
 import Login from './Login';
-import About from './About'
+import About from './About';
+import Register from './Register';
 const axios = require('axios');
 
 
@@ -84,6 +85,7 @@ reqSent=()=>{
           <div class="collapse navbar-collapse" id="navbarNav">
             <Link className = 'nav nav-about' to='/'> About </Link>
             <Link className = 'nav nav-login' to='/login'> Login </Link>
+            <Link className = 'nav nav-login' to='/register'> Register </Link>
             <Link className = 'nav nav-main' to='/main'> Main User Page </Link>
           </div>
         </nav>
@@ -98,7 +100,8 @@ reqSent=()=>{
         </div>
         <Switch>
           <Route exact path='/' render = {()=>{return <About />}} />                    
-          <Route  path='/login' render = {()=>{return <Login />}} />          
+          <Route  path='/login' render = {()=>{return <Login />}} /> 
+          <Route  path='/register' render = {()=>{return <Register />}} />          
           <Route path='/main' render = {()=>{return <Main results = {this.state.results} findPeople = {this.findPeople} reqSent = {this.state.reqSent} newRec = {this.newRec} />}} />
         </Switch>
       </div>

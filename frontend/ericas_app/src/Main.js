@@ -95,7 +95,7 @@ class Main extends Component {
                     {/* Choosen Restaurant */}
                     <div className="form-group col-6">
                         <label htmlFor="searchBar">Where would you like to eat?</label>
-                        <input type="text" className="form-control shadow-light" id="searchBar" placeholder="Search" ref = 'rest' required />
+                        <input type="text" className="form-control shadow-light" id="searchBar" placeholder="The Keg" ref = 'rest' required />
                     </div>
                     {/* Prefered Time */}
                     <div className="form-group col-6">
