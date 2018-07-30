@@ -16,7 +16,7 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   padding: 2em;
-  height: 40em; }
+  height: 45em; }
   .header h3 {
     color: white;
     font-weight: 800;
@@ -26,7 +26,7 @@ h1 {
   font-size: 5rem;
   color: white;
   font-weight: 900;
-  margin-top: 0.5em;
+  margin-top: 1em;
   text-shadow: 1px 3px 4px #373a43; }
 
 .greet {
@@ -62,6 +62,12 @@ h1 {
 .shadow-light {
   box-shadow: 1px 2px 3px grey; }
 
+#fixedTop {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1000; }
+
 .nav {
   display: inline-block;
   text-align: center;
@@ -83,20 +89,25 @@ h1 {
 .nav-main {
   margin-right: 2em; }
 
+.nav-user {
+  border-radius: 50%;
+  background-position: right; }
+
 .nav:hover {
   text-decoration: none;
   color: black;
   background-color: white; }
 
 .candidates {
-  background-color: ghostwhite;
+  background-color: #373a43;
+  color: white;
   border-radius: 5%;
   width: 20em;
   height: auto;
   padding: 0.75em;
   margin: 0.50em 0.50em;
   box-shadow: 1px 2px 3px #444141;
-  border: 1px solid #74C248;
+  border: 1px solid #5bb7c1;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -145,7 +156,7 @@ h1 {
   font-size: 1.25rem; }
 
 .phone {
-  color: #74C248; }
+  color: #5bb7c1; }
 
 .reg {
   text-align: center;

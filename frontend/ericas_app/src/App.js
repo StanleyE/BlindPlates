@@ -77,7 +77,7 @@ reqSent=()=>{
   render() {
     return (
       <div className="App">
-      <nav className = 'navbar navbar-expand-lg navbar-dark bg-dark'>
+      <nav id ='fixedTop' className = 'navbar navbar-expand-lg navbar-dark bg-dark'>
         <button className ="navbar-toggler" type="button" data-toggle="collapse"    data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className ="navbar-toggler-icon"></span>
           </button>
@@ -86,11 +86,12 @@ reqSent=()=>{
             <Link className = 'nav nav-about' to='/'> About </Link>
             <Link className = 'nav nav-login' to='/login'> Login </Link>
             <Link className = 'nav nav-login' to='/register'> Register </Link>
-            <Link className = 'nav nav-main' to='/main'> Main User Page </Link>
+            <Link className = 'nav nav-main' to='/main'> Send Invitation </Link>
+            <Link className = 'nav nav-user' to='/user'> <i class="fas fa-user-astronaut fa-2x"></i> </Link>
           </div>
         </nav>
         <div className = 'header'>
-          <h1>BlindPl@te</h1>
+          <h1>BlindPl@tes</h1>
           <h3>Let's have dinner together</h3>
         </div>
         
