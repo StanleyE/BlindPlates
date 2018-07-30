@@ -16,7 +16,7 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   padding: 2em;
-  height: 45em; }
+  height: 40em; }
   .header h3 {
     color: white;
     font-weight: 800;
@@ -32,6 +32,10 @@ h1 {
 .greet {
   margin: .75em;
   color: black; }
+
+.disclaim {
+  color: darkred;
+  font-weight: 700; }
 
 .login {
   text-align: center;
