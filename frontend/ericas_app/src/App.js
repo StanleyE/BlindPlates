@@ -97,8 +97,8 @@ reqSent=()=>{
         
         <div className="greet">
           <h4 className='disclaim'>(This site is still currently under construction and is not functional, we thank you for your interest and patience)</h4>
-          {/* <h3>Hey there!</h3>
-          <h4>Feeling like socializing tonight?</h4> */}
+          <h3>Hey there!</h3>
+          {/* <h4>Feeling like socializing tonight?</h4> */}
         </div>
         <Switch>
           <Route exact path='/' render = {()=>{return <About />}} />                    
