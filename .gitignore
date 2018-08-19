@@ -5,6 +5,7 @@
 /data
 /config.js
 /nopush
+/.env
 
 
 # testing
